@@ -12,9 +12,9 @@ import cors from "cors";
 import { connectToDatabase } from "./config/databaseConfig";
 // eslint-disable-next-line node/no-extraneous-import
 import bodyParser from "body-parser";
-
+import dotenv from "dotenv";
 // **** Variables **** //
-
+dotenv.config();
 const app = express();
 
 const ALLOWED_ORIGINS = ["http://localhost:3000"];
