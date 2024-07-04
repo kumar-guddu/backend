@@ -1,0 +1,793 @@
+{
+
+    "ratios": [
+        {
+            "key": "TrailingPE",
+            "name": "Trailing Price to Earning Ratio",
+            "formula": "Net Income / Shareholder's Equity",
+            "description": "A measure of a company's profitability that reveals how much profit a company generates with the money shareholders have invested.",
+            "historicalData": [
+                {
+                    "date": "2024-03-31",
+                    "value": "19.28"
+                }
+            ]
+        },
+        {
+            "key": "ForwardPE",
+            "name": "Forward Price to Earning Ratio",
+            "formula": "Market Value per Share / Forecasted Earnings per Share",
+            "description": "A measure of the price-to-earnings ratio using forecasted earnings for the P/E calculation.",
+            "historicalData": [
+                {
+                    "date": "2024-03-31",
+                    "value": "18.12"
+                }
+            ]
+        },
+        {
+            "key": "PriceToSalesRatioTTM",
+            "name": "Price to Sales Ratio (TTM)",
+            "formula": "Price per Share / Revenue per Share",
+            "description": "A valuation ratio that comparesa company's stock price to its revenues.",
+            "historicalData": [
+                {
+                    "date": "2024-03-31",
+                    "value": "2.701"
+                }
+            ]
+        },
+        {
+            "key": "PriceToBookRatio",
+            "name": "Price to Book Ratio",
+            "formula": "Market Value per Share / Book Value per Share",
+            "description": "A ratio used to compare a stock's market value to its book value.",
+            "historicalData": [
+                {
+                    "date": "2024-03-31",
+                    "value": "7.42"
+                }
+            ]
+        },
+        {
+            "key": "EVToRevenue",
+            "name": "Enterprise Value to Revenue",
+            "formula": "Enterprise Value / Revenue",
+            "description": "A measure of the value ofa company that compares enterprise value to revenue.",
+            "historicalData": [
+                {
+                    "date": "2024-03-31",
+                    "value": "3.453"
+                }
+            ]
+        },
+        {
+            "key": "EVToEBITDA",
+            "name": "Enterprise Value to EBITDA",
+            "formula": "Enterprise Value / EBITDA",
+            "description": "A measure of the value of a company that compares enterprise value to EBITDA.",
+            "historicalData": [
+                {
+                    "date": "2024-03-31",
+                    "value": "14.54"
+                }
+            ]
+        },
+        {
+            "key": "PEGRatio",
+            "name": "PEG Ratio",
+            "formula": "P/E Ratio / Annual EPS Growth",
+            "description": "A valuation metric for determining the relative trade-off between the price of a stock, the earnings generated per share (EPS), and the company's expected growth.",
+            "historicalData": [
+                {
+                    "date": "2024-03-31",
+                    "value": "4.2"
+                }
+            ]
+        },
+        {
+            "key": "Beta",
+            "name": "Beta",
+            "formula": "Covariance(ROA, ROM) / Variance(ROM)",
+            "description": "A measure of the volatility, or systematic risk, of a security or portfolio compared to the market as a whole.",
+            "historicalData": [
+                {
+                    "date": "2024-03-31",
+                    "value": "0.718"
+                }
+            ]
+        },
+        {
+            "key": "ProfitMargin",
+            "name": "Profit Margin",
+            "formula": "Net Income / Revenue",
+            "description": "A measure of profitability that calculates the percentage of revenue that exceeds costs.",
+            "historicalData": [
+                {
+                    "date": "2024-03-31",
+                    "value": "0.132"
+                }
+            ]
+        },
+        {
+            "key": "OperatingMarginTTM",
+            "name": "Operating Margin (TTM)",
+            "formula": "Operating Income / Revenue",
+            "description": "A profitability ratio calculated as operating income divided by revenue.",
+            "historicalData": [
+                {
+                    "date": "2024-03-31",
+                    "value": "0.102"
+                }
+            ]
+        },
+        {
+            "key": "ReturnOnAssetsTTM",
+            "name": "Return on Assets (TTM)",
+            "formula": "Net Income / Total Assets",
+            "description": "An indicator of how profitable a company is relative to its total assets.",
+            "historicalData": [
+                {
+                    "date": "2024-03-31",
+                    "value": "0.0458"
+                }
+            ]
+        },
+        {
+            "key": "ReturnOnEquityTTM",
+            "name": "Return on Equity (TTM)",
+            "formula": "Net Income / Shareholder's Equity",
+            "description": "A measure of financial performance calculated by dividing net income by shareholder's equity.",
+            "historicalData": [
+                {
+                    "date": "2024-03-31",
+                    "value": "0.362"
+                }
+            ]
+        },
+        {
+            "key": "RevenueTTM",
+            "name": "Revenue (TTM)",
+            "formula": "Total Sales Revenue over the Trailing Twelve Months",
+            "description": "Total revenue generated by a company over the trailing twelve months.",
+            "historicalData": [
+                {
+                    "date": "2024-03-31",
+                    "value": "62068998000"
+                }
+            ]
+        },
+        {
+            "key": "GrossProfitTTM",
+            "name": "Gross Profit (TTM)",
+            "formula": "Total Revenue - Cost of Goods Sold",
+            "description": "Gross profit generated by acompany over the trailing twelve months.",
+            "historicalData": [
+                {
+                    "date": "2024-03-31",
+                    "value": "32688000000"
+                }
+            ]
+        },
+
+
+        {
+            "key": "grossProfit",
+            "name": "Gross Profit",
+            "formula": "Total Revenue - Cost of Revenue",
+            "description": "Gross profit is the profit a company makes after deducting the costs associated with making and selling its products.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "34300000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "31486000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "31533000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "36943000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "46407000000"
+                }
+            ]
+        },
+        {
+            "key": "totalRevenue",
+            "name": "Total Revenue",
+            "formula": "Total Revenue from all sources",
+            "description": "Total revenue is the sum of all revenue streams a company earns from its operations.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "61860000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "57350000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "57714000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "79139000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "92793000000"
+                }
+            ]
+        },
+        {
+            "key": "costOfRevenue",
+            "name": "Cost of Revenue",
+            "formula": "Total Cost of Goods Sold",
+            "description": "Cost of revenue is the total cost of manufacturing and delivering a product or service to consumers.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "27560000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "25865000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "26181000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "42196000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "46386000000"
+                }
+            ]
+        },
+        {
+            "key": "operatingIncome",
+            "name": "Operating Income",
+            "formula": "Gross Profit - Operating Expenses",
+            "description": "Operating income is the profit realized from a business's operations.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "6979000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "4786000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "9004000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "8813000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "16443000000"
+                }
+            ]
+        },
+        {
+            "key": "sellingGeneralAndAdministrative",
+            "name": "Selling, General and Administrative Expenses",
+            "formula": "Total Selling, General and Administrative Expenses",
+            "description": "SG&A expenses include all non-production related expenses incurred by a company.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "19003000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "18745000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "18724000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "19680000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "23180000000"
+                }
+            ]
+        },
+        {
+            "key": "researchAndDevelopment",
+            "name": "Research and Development Expenses",
+            "formula": "Total Research and Development Expenses",
+            "description": "R&D expenses are the costs a company incurs for researching and developing new products.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "6775000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "6488000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "5910000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "5590000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "5437000000"
+                }
+            ]
+        },
+        {
+            "key": "netIncome",
+            "name": "Net Income",
+            "formula": "Total Revenue - Total Expenses",
+            "description": "Net income is the total profit of a company after all expenses and taxes have been deducted.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "7502000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "5743000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "9431000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "5753000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "12016000000"
+                }
+            ]
+        },
+
+        {
+            "key": "operatingCashflow",
+            "name": "Operating Cash Flow",
+            "formula": "Cash Inflows - Cash Outflows from Operating Activities",
+            "description": "Operating cash flow is the cash generated from the normal operations of a business.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "13931000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "12796000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "14770000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "16724000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "16868000000"
+                }
+            ]
+        },
+        {
+            "key": "capitalExpenditures",
+            "name": "Capital Expenditures",
+            "formula": "Total Capital Expenditures",
+            "description": "Capital expenditures are funds used by a company to acquire,upgrade, and maintain physical assets such as property, industrial buildings, or equipment.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "1245000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "2062000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "2286000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "3229000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "4183000000"
+                }
+            ]
+        },
+        {
+            "key": "cashflowFromInvestment",
+            "name": "Cash Flow from Investment",
+            "formula": "Total Cash Flow from Investing Activities",
+            "description": "Cash flow from investing activities includes the purchase and sale of long-term investments and property, plant, and equipment.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "-7070000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "-5975000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "-26936000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "-7081000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "-3001000000"
+                }
+            ]
+        },
+        {
+            "key": "cashflowFromFinancing",
+            "name": "Cash Flow from Financing",
+            "formula": "Total Cash Flow from Financing Activities",
+            "description": "Cash flow from financing activities includes the inflow of cash from investors such as banks or shareholders, as well as the outflow of cash to shareholders as dividends.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "-1769000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "-13354000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "9042000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "-6418000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "-15452000000"
+                }
+            ]
+        },
+        {
+            "key": "dividendPayout",
+            "name": "Dividend Payout",
+            "formula": "Total Dividend Payout",
+            "description": "Dividend payout is the sum of all dividends paid to shareholders.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "6040000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "5869000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "5707000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "5506000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "4265000000"
+                }
+            ]
+        },
+ 
+        {
+            "key": "totalAssets",
+            "name": "Total Assets",
+            "formula": "Liabilities + Shareholder's Equity",
+            "description": "Total assets represent everything of value that is owned by a company.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "135241000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "132001000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "152186000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "125356000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "117271000000"
+                }
+            ]
+        },
+        {
+            "key": "totalCurrentAssets",
+            "name": "Total Current Assets",
+            "formula": "Sum of all current assets",
+            "description": "Total current assets include cash, accounts receivable, inventory, and other assets that are expected to be converted to cash within a year.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "32908000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "29539000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "38420000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "49735000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "47377000000"
+                }
+            ]
+        },
+        {
+            "key": "cashAndCashEquivalentsAtCarryingValue",
+            "name": "Cash and Cash Equivalents",
+            "formula": "Sum of all cash and cash equivalents",
+            "description": "Cash and cash equivalents include currency, bank accounts, and other liquid financial instruments.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "13068000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "6650000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "8172000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "11972000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "8476000000"
+                }
+            ]
+        },
+        {
+            "key": "inventory",
+            "name": "Inventory",
+            "formula": "Total Inventory",
+            "description": "Inventory includes raw materials, work-in-progress, and finished goods held by a company.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "1161000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "1649000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "1619000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "1583000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "2103000000"
+                }
+            ]
+        },
+        {
+            "key": "currentNetReceivables",
+            "name": "Net Receivables",
+            "formula": "Total Receivables - Allowances for Doubtful Accounts",
+            "description": "Net receivables represent the amount of money a company expects to receive from its customers after accounting for doubtful accounts.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "7725000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "14977000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "23795000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "31630000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "31831000000"
+                }
+            ]
+        },
+        {
+            "key": "totalLiabilities",
+            "name": "Total Liabilities",
+            "formula": "Sum of all liabilities",
+            "description": "Total liabilities include both current and long-term obligations.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "112628000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "113005000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "131202000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "107631000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "105257000000"
+                }
+            ]
+        },
+        {
+            "key": "totalCurrentLiabilities",
+            "name": "Total Current Liabilities",
+            "formula": "Sum of all current liabilities",
+            "description": "Total current liabilities include short-term obligations that are due within a year.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "34122000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "33619000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "37701000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "37363000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "39581000000"
+                }
+            ]
+        },
+        {
+            "key": "shortTermDebt",
+            "name": "Short Term Debt",
+            "formula": "Total Short Term Debt",
+            "description": "Short term debt includes all debt obligations due within one year.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "6426000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "6787000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "8797000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "1773000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "1130000000"
+                }
+            ]
+        },
+        {
+            "key": "longTermDebt",
+            "name": "Long Term Debt",
+            "formula": "Total Long Term Debt",
+            "description": "Long term debt includes all debt obligations due after one year.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "54588000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "56193000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "65953000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "45052000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "39593000000"
+                }
+            ]
+        },
+        {
+            "key": "totalShareholderEquity",
+            "name": "Total Shareholder Equity",
+            "formula": "Total Assets - Total Liabilities",
+            "description": "Total shareholder equity is the net value of a company, calculated as total assets minus total liabilities.",
+            "historicalData": [
+                {
+                    "date": "2023-12-31",
+                    "value": "22533000000"
+                },
+                {
+                    "date": "2021-12-31",
+                    "value": "18901000000"
+                },
+                {
+                    "date": "2019-12-31",
+                    "value": "20841000000"
+                },
+                {
+                    "date": "2017-12-31",
+                    "value": "17594000000"
+                },
+                {
+                    "date": "2014-12-31",
+                    "value": "11868000000"
+                }
+            ]
+        }
+    ]
+}

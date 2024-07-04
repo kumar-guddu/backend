@@ -1,0 +1,1029 @@
+{
+  "companyList": [
+    {
+      "name": "ALCOA CORP",
+      "ticker": "AA",
+      "cik": "1675149"
+    },
+    {
+      "name": "ADMIRALTY BANCORP INC",
+      "ticker": "AAAB",
+      "cik": "1066808"
+    },
+    {
+      "name": "ALTANA AKTIENGESELLSCHAFT",
+      "ticker": "AAAGY",
+      "cik": "1182802"
+    },
+    {
+      "name": "ADVANCED ACCELERATOR APPLICATIONS SA",
+      "ticker": "AAAP",
+      "cik": "1611787"
+    },
+    {
+      "name": "ACCESS ANYTIME BANCORP INC",
+      "ticker": "AABC",
+      "cik": "1024015"
+    },
+    {
+      "name": "ARES ACQUISITION CORP",
+      "ticker": "AAC",
+      "cik": "1829432"
+    },
+    {
+      "name": "ARCADIA FINANCIAL LTD",
+      "ticker": "AAC1",
+      "cik": "879674"
+    },
+    {
+      "name": "ALLIANCE ATLANTIS COMMUNICATIONS INC",
+      "ticker": "AACB",
+      "cik": "1005887"
+    },
+    {
+      "name": "ASSET ACCEPTANCE CAPITAL CORP",
+      "ticker": "AACC",
+      "cik": "1264707"
+    },
+    {
+      "name": "ACE CASH EXPRESS INC",
+      "ticker": "AACE",
+      "cik": "849116"
+    },
+    {
+      "name": "ATA CREATIVITY GLOBAL",
+      "ticker": "AACG",
+      "cik": "1420529"
+    },
+    {
+      "name": "AAC HOLDINGS INC",
+      "ticker": "AACH",
+      "cik": "1606180"
+    },
+    {
+      "name": "ARMADA ACQUISITION CORP I",
+      "ticker": "AACI",
+      "cik": "1844817"
+    },
+    {
+      "name": "AUSTRALIA ACQUISITION CORP",
+      "ticker": "AACPF",
+      "cik": "1499593"
+    },
+    {
+      "name": "ARES ACQUISITION CORP II",
+      "ticker": "AACT",
+      "cik": "1853138"
+    },
+    {
+      "name": "AADI BIOSCIENCE INC",
+      "ticker": "AADI",
+      "cik": "1422142"
+    },
+    {
+      "name": "ADVANTAGE BANCORP INC",
+      "ticker": "AADV",
+      "cik": "881892"
+    },
+    {
+      "name": "AFRICAN AGRICULTURE HOLDINGS INC",
+      "ticker": "AAGR",
+      "cik": "1848898"
+    },
+    {
+      "name": "AMBASSADOR APARTMENTS INC",
+      "ticker": "AAH",
+      "cik": "921946"
+    },
+    {
+      "name": "AIRTRAN HOLDINGS INC",
+      "ticker": "AAI",
+      "cik": "948846"
+    },
+    {
+      "name": "AQUA ALLIANCE INC",
+      "ticker": "AAI1",
+      "cik": "823556"
+    },
+    {
+      "name": "ARLINGTON ASSET INVESTMENT CORP",
+      "ticker": "AAIC",
+      "cik": "1209028"
+    },
+    {
+      "name": "ALABAMA AIRCRAFT INDUSTRIES INC",
+      "ticker": "AAIIQ",
+      "cik": "771729"
+    },
+    {
+      "name": "AAIPHARMA INC",
+      "ticker": "AAIIQ1",
+      "cik": "1013243"
+    },
+    {
+      "name": "AVANTAIR INC",
+      "ticker": "AAIR",
+      "cik": "1303849"
+    },
+    {
+      "name": "AMERICAN AIRLINES GROUP INC",
+      "ticker": "AAL",
+      "cik": "6201"
+    },
+    {
+      "name": "ALTISOURCE ASSET MANAGEMENT CORP",
+      "ticker": "AAMC",
+      "cik": "1555074"
+    },
+    {
+      "name": "ATLANTIC AMERICAN CORP",
+      "ticker": "AAME",
+      "cik": "8177"
+    },
+    {
+      "name": "AMR CORP",
+      "ticker": "AAMRQ",
+      "cik": "6201"
+    },
+    {
+      "name": "AARON'S COMPANY INC",
+      "ticker": "AAN",
+      "cik": "1821393"
+    },
+    {
+      "name": "ABIGAIL ADAMS NATIONAL BANCORP INC",
+      "ticker": "AANB",
+      "cik": "356809"
+    },
+    {
+      "name": "APPLIED OPTOELECTRONICS INC",
+      "ticker": "AAOI",
+      "cik": "1158114"
+    },
+    {
+      "name": "AAON INC",
+      "ticker": "AAON",
+      "cik": "824142"
+    },
+    {
+      "name": "ADVANCE AUTO PARTS INC",
+      "ticker": "AAP",
+      "cik": "1158449"
+    },
+    {
+      "name": "ATLANTIC ALLIANCE PARTNERSHIP CORP",
+      "ticker": "AAPC",
+      "cik": "1630940"
+    },
+    {
+      "name": "APPLE INC",
+      "ticker": "AAPL",
+      "cik": "320193"
+    },
+    {
+      "name": "ACCELERATE ACQUISITION CORP",
+      "ticker": "AAQC",
+      "cik": "1838883"
+    },
+    {
+      "name": "AMERICAN ASSETS TRUST INC",
+      "ticker": "AAT",
+      "cik": "1500217"
+    },
+    {
+      "name": "AUTOSCOPE TECHNOLOGIES CORP",
+      "ticker": "AATC",
+      "cik": "943034"
+    },
+    {
+      "name": "ADVANCED ANALOGIC TECHNOLOGIES INC",
+      "ticker": "AATI",
+      "cik": "1104042"
+    },
+    {
+      "name": "ANALYSIS & TECHNOLOGY INC",
+      "ticker": "AATI1",
+      "cik": "310876"
+    },
+    {
+      "name": "AAVID THERMAL TECHNOLOGIES INC",
+      "ticker": "AATT",
+      "cik": "1003481"
+    },
+    {
+      "name": "ALMADEN MINERALS LTD",
+      "ticker": "AAU",
+      "cik": "1015647"
+    },
+    {
+      "name": "ADVANTAGE OIL & GAS LTD",
+      "ticker": "AAVVF",
+      "cik": "1468079"
+    },
+    {
+      "name": "ATLAS AIR WORLDWIDE HOLDINGS INC",
+      "ticker": "AAWHQ",
+      "cik": "1135185"
+    },
+    {
+      "name": "ATLAS AIR WORLDWIDE HOLDINGS INC",
+      "ticker": "AAWW",
+      "cik": "1135185"
+    },
+    {
+      "name": "ALZA CORP",
+      "ticker": "AZA.A",
+      "cik": "4310"
+    },
+    {
+      "name": "BANRO CORP",
+      "ticker": "BAA",
+      "cik": "1286597"
+    },
+    {
+      "name": "BAAN CO N V",
+      "ticker": "BAANF",
+      "cik": "944624"
+    },
+    {
+      "name": "CALATLANTIC GROUP INC",
+      "ticker": "CAA",
+      "cik": "878560"
+    },
+    {
+      "name": "CORPORACION AMERICA AIRPORTS SA",
+      "ticker": "CAAP",
+      "cik": "1717393"
+    },
+    {
+      "name": "CHINA AUTOMOTIVE SYSTEMS INC",
+      "ticker": "CAAS",
+      "cik": "1157762"
+    },
+    {
+      "name": "CATCHA INVESTMENT CORP",
+      "ticker": "CHAA",
+      "cik": "1838293"
+    },
+    {
+      "name": "COLONNADE ACQUISITION CORP II",
+      "ticker": "CLAA",
+      "cik": "1837739"
+    },
+    {
+      "name": "CONYERS PARK III ACQUISITION CORP",
+      "ticker": "CPAA",
+      "cik": "1841137"
+    },
+    {
+      "name": "CONYERS PARK ACQUISITION CORP",
+      "ticker": "CPAA1",
+      "cik": "1672985"
+    },
+    {
+      "name": "FTAC ATHENA ACQUISITION CORP",
+      "ticker": "FTAA",
+      "cik": "1832696"
+    },
+    {
+      "name": "GENESIS GROWTH TECH ACQUISITION CORP",
+      "ticker": "GGAAF",
+      "cik": "1865697"
+    },
+    {
+      "name": "HEALTH ASSURANCE ACQUISITION CORP",
+      "ticker": "HAAC",
+      "cik": "1824013"
+    },
+    {
+      "name": "IAA INC",
+      "ticker": "IAA",
+      "cik": "1745041"
+    },
+    {
+      "name": "INSURANCE AUTO AUCTIONS INC",
+      "ticker": "IAAI",
+      "cik": "880026"
+    },
+    {
+      "name": "INDUSTRIAS BACHOCO SAB DE CV",
+      "ticker": "IBAAY",
+      "cik": "1044896"
+    },
+    {
+      "name": "AQUILA MERCHANT SERVICE INC",
+      "ticker": "ILA.A",
+      "cik": "1128032"
+    },
+    {
+      "name": "INFORMATION MANAGEMENT ASSOCIATES INC",
+      "ticker": "IMAA",
+      "cik": "871696"
+    },
+    {
+      "name": "IRIS ACQUISITION CORP",
+      "ticker": "IRAA",
+      "cik": "1831874"
+    },
+    {
+      "name": "IRON SPARK I INC",
+      "ticker": "ISAA",
+      "cik": "1845601"
+    },
+    {
+      "name": "LITHIUM AMERICAS (ARGENTINA) CORP",
+      "ticker": "LAAC",
+      "cik": "1440972"
+    },
+    {
+      "name": "L CATTERTON ASIA ACQUISITION CORP",
+      "ticker": "LCAA",
+      "cik": "1841024"
+    },
+    {
+      "name": "LERER HIPPEAU ACQUISITION CORP",
+      "ticker": "LHAA",
+      "cik": "1841948"
+    },
+    {
+      "name": "MID AMERICA APARTMENT COMMUNITIES INC",
+      "ticker": "MAA",
+      "cik": "912595"
+    },
+    {
+      "name": "AMERICAN BIOGENETIC SCIENCES INC",
+      "ticker": "MABAA",
+      "cik": "856984"
+    },
+    {
+      "name": "MOUNTAIN & CO I ACQUISITION CORP",
+      "ticker": "MCAA",
+      "cik": "1856995"
+    },
+    {
+      "name": "MOTORCAR PARTS OF AMERICA INC",
+      "ticker": "MPAA",
+      "cik": "918251"
+    },
+    {
+      "name": "NABISCO HOLDINGS CORP",
+      "ticker": "NA.A",
+      "cik": "932130"
+    },
+    {
+      "name": "NORTH ATLANTIC ACQUISITION CORP",
+      "ticker": "NAAC",
+      "cik": "1830063"
+    },
+    {
+      "name": "NAAS TECHNOLOGY INC",
+      "ticker": "NAAS",
+      "cik": "1712178"
+    },
+    {
+      "name": "NCS HEALTHCARE INC",
+      "ticker": "NCSAA",
+      "cik": "1004990"
+    },
+    {
+      "name": "OPY ACQUISITION CORP I",
+      "ticker": "OHAA",
+      "cik": "1870778"
+    },
+    {
+      "name": "PLAINS ALL AMERICAN PIPELINE LP",
+      "ticker": "PAA",
+      "cik": "1070423"
+    },
+    {
+      "name": "PAN AMERICAN SILVER CORP",
+      "ticker": "PAAS",
+      "cik": "771992"
+    },
+    {
+      "name": "PRA GROUP INC",
+      "ticker": "PRAA",
+      "cik": "1185348"
+    },
+    {
+      "name": "CLOOPEN GROUP HOLDING LTD",
+      "ticker": "RAASY",
+      "cik": "1804583"
+    },
+    {
+      "name": "REPUBLIC BANCORP INC",
+      "ticker": "RBCAA",
+      "cik": "921557"
+    },
+    {
+      "name": "ROYAL BANCSHARES OF PENNSYLVANIA INC",
+      "ticker": "RBPAA",
+      "cik": "922487"
+    },
+    {
+      "name": "RYANAIR HOLDINGS PLC",
+      "ticker": "RYAAY",
+      "cik": "1038683"
+    },
+    {
+      "name": "STRATEGIA CORP",
+      "ticker": "SAA1",
+      "cik": "797221"
+    },
+    {
+      "name": "INCONTACT INC",
+      "ticker": "SAAS",
+      "cik": "1087934"
+    },
+    {
+      "name": "SPANISH BROADCASTING SYSTEM INC",
+      "ticker": "SBSAA",
+      "cik": "927720"
+    },
+    {
+      "name": "SEQUA CORP",
+      "ticker": "SQA.A",
+      "cik": "95301"
+    },
+    {
+      "name": "SCIENCE STRATEGIC ACQUISITION CORP ALPHA",
+      "ticker": "SSAA",
+      "cik": "1830547"
+    },
+    {
+      "name": "STAAR SURGICAL CO",
+      "ticker": "STAA",
+      "cik": "718937"
+    },
+    {
+      "name": "TARGET GLOBAL ACQUISITION I CORP",
+      "ticker": "TGAA",
+      "cik": "1847355"
+    },
+    {
+      "name": "TERRA NOVA BERMUDA HOLDING LTD",
+      "ticker": "TNA.A",
+      "cik": "935937"
+    },
+    {
+      "name": "UNDER ARMOUR INC",
+      "ticker": "UAA",
+      "cik": "1336917"
+    },
+    {
+      "name": "UNION ACCEPTANCE CORP",
+      "ticker": "UACAA",
+      "cik": "927790"
+    },
+    {
+      "name": "UTA ACQUISITION CORP",
+      "ticker": "UTAA",
+      "cik": "1879221"
+    },
+    {
+      "name": "JANUS HENDERSON AAA CLO ETF",
+      "ticker": "JAAA",
+      "cik": "1500604"
+    },
+    {
+      "name": "AQUAVENTURE HOLDINGS LTD",
+      "ticker": "WAAS",
+      "cik": "1422841"
+    },
+    {
+      "name": "WCA WASTE CORP",
+      "ticker": "WCAA",
+      "cik": "1282398"
+    },
+    {
+      "name": "ZAP",
+      "ticker": "ZAAP",
+      "cik": "1024628"
+    },
+    {
+      "name": "ALTANA AKTIENGESELLSCHAFT",
+      "ticker": "AAAGY",
+      "cik": "1182802"
+    },
+    {
+      "name": "ADVANCED ACCELERATOR APPLICATIONS SA",
+      "ticker": "AAAP",
+      "cik": "1611787"
+    },
+    {
+      "name": "ASTRAZENECA AB",
+      "ticker": "AAB",
+      "cik": "928966"
+    },
+    {
+      "name": "ARES ACQUISITION CORP",
+      "ticker": "AAC.U",
+      "cik": "1829432"
+    },
+    {
+      "name": "ARES ACQUISITION CORP",
+      "ticker": "AAC.WS",
+      "cik": "1829432"
+    },
+    {
+      "name": "ALLIANCE ATLANTIS COMMUNICATIONS INC",
+      "ticker": "AACB",
+      "cik": "1005887"
+    },
+    {
+      "name": "ATA CREATIVITY GLOBAL",
+      "ticker": "AACG",
+      "cik": "1420529"
+    },
+    {
+      "name": "ARMADA ACQUISITION CORP I",
+      "ticker": "AACIU",
+      "cik": "1844817"
+    },
+    {
+      "name": "ARMADA ACQUISITION CORP I",
+      "ticker": "AACIW",
+      "cik": "1844817"
+    },
+    {
+      "name": "ORIGIN MATERIALS INC",
+      "ticker": "AACQU",
+      "cik": "1802457"
+    },
+    {
+      "name": "ARES ACQUISITION CORP II",
+      "ticker": "AACT.U",
+      "cik": "1853138"
+    },
+    {
+      "name": "ARES ACQUISITION CORP II",
+      "ticker": "AACT.WS",
+      "cik": "1853138"
+    },
+    {
+      "name": "ANGLO AMERICAN GOLD INVESTMENT CO LTD",
+      "ticker": "AAGIY1",
+      "cik": ""
+    },
+    {
+      "name": "AFRICAN AGRICULTURE HOLDINGS INC",
+      "ticker": "AAGRW",
+      "cik": "1848898"
+    },
+    {
+      "name": "ARLINGTON ASSET INVESTMENT CORP",
+      "ticker": "AAIC-PB",
+      "cik": "1209028"
+    },
+    {
+      "name": "ARLINGTON ASSET INVESTMENT CORP",
+      "ticker": "AAIC-PC",
+      "cik": "1209028"
+    },
+    {
+      "name": "APOLLO GLOBAL MANAGEMENT INC",
+      "ticker": "AAM-PA",
+      "cik": "1858681"
+    },
+    {
+      "name": "APOLLO GLOBAL MANAGEMENT INC",
+      "ticker": "AAM-PB",
+      "cik": "1858681"
+    },
+    {
+      "name": "PROG HOLDINGS INC",
+      "ticker": "AAN1",
+      "cik": "1808834"
+    },
+    {
+      "name": "AMWAY ASIA PACIFIC LTD",
+      "ticker": "AAP1",
+      "cik": "914601"
+    },
+    {
+      "name": "ACCELERATE ACQUISITION CORP",
+      "ticker": "AAQC.U",
+      "cik": "1838883"
+    },
+    {
+      "name": "ACCELERATE ACQUISITION CORP",
+      "ticker": "AAQCW",
+      "cik": "1838883"
+    },
+    {
+      "name": "ALMADEN MINERALS LTD",
+      "ticker": "AAU",
+      "cik": "1015647"
+    },
+    {
+      "name": "ADVANTAGE OIL & GAS LTD",
+      "ticker": "AAVVF",
+      "cik": "1468079"
+    },
+    {
+      "name": "CATCHA INVESTMENT CORP",
+      "ticker": "CHAA.U",
+      "cik": "1838293"
+    },
+    {
+      "name": "CATCHA INVESTMENT CORP",
+      "ticker": "CHAAW",
+      "cik": "1838293"
+    },
+    {
+      "name": "COLONNADE ACQUISITION CORP II",
+      "ticker": "CLAA.U",
+      "cik": "1837739"
+    },
+    {
+      "name": "COLONNADE ACQUISITION CORP II",
+      "ticker": "CLAA.WS",
+      "cik": "1837739"
+    },
+    {
+      "name": "CONYERS PARK III ACQUISITION CORP",
+      "ticker": "CPAAU",
+      "cik": "1841137"
+    },
+    {
+      "name": "ADVANTAGE SOLUTIONS INC",
+      "ticker": "CPAAU1",
+      "cik": "1776661"
+    },
+    {
+      "name": "CONYERS PARK III ACQUISITION CORP",
+      "ticker": "CPAAW",
+      "cik": "1841137"
+    },
+    {
+      "name": "CONYERS PARK ACQUISITION CORP",
+      "ticker": "CPAAW1",
+      "cik": "1672985"
+    },
+    {
+      "name": "FEDDERS CORP",
+      "ticker": "FJA.A",
+      "cik": "744106"
+    },
+    {
+      "name": "FTAC ATHENA ACQUISITION CORP",
+      "ticker": "FTAAU",
+      "cik": "1832696"
+    },
+    {
+      "name": "FTAC ATHENA ACQUISITION CORP",
+      "ticker": "FTAAW",
+      "cik": "1832696"
+    },
+    {
+      "name": "GENESIS GROWTH TECH ACQUISITION CORP",
+      "ticker": "GGAAU",
+      "cik": "1865697"
+    },
+    {
+      "name": "GENESIS GROWTH TECH ACQUISITION CORP",
+      "ticker": "GGAAW",
+      "cik": "1865697"
+    },
+    {
+      "name": "HEALTH ASSURANCE ACQUISITION CORP",
+      "ticker": "HAACU",
+      "cik": "1824013"
+    },
+    {
+      "name": "HEALTH ASSURANCE ACQUISITION CORP",
+      "ticker": "HAACW",
+      "cik": "1824013"
+    },
+    {
+      "name": "INDIGO AVIATION AB",
+      "ticker": "IAAB",
+      "cik": "1057047"
+    },
+    {
+      "name": "INDUSTRIAS BACHOCO SAB DE CV",
+      "ticker": "IBAAY",
+      "cik": "1044896"
+    },
+    {
+      "name": "INFOINTERACTIVE INC",
+      "ticker": "IIAA",
+      "cik": "1078982"
+    },
+    {
+      "name": "IRIS ACQUISITION CORP",
+      "ticker": "IRAAU",
+      "cik": "1831874"
+    },
+    {
+      "name": "IRIS ACQUISITION CORP",
+      "ticker": "IRAAW",
+      "cik": "1831874"
+    },
+    {
+      "name": "INFOGROUP INC",
+      "ticker": "IUSAA",
+      "cik": "879437"
+    },
+    {
+      "name": "PROSOMNUS INC",
+      "ticker": "LAAAU",
+      "cik": "1934064"
+    },
+    {
+      "name": "L CATTERTON ASIA ACQUISITION CORP",
+      "ticker": "LCAAU",
+      "cik": "1841024"
+    },
+    {
+      "name": "L CATTERTON ASIA ACQUISITION CORP",
+      "ticker": "LCAAW",
+      "cik": "1841024"
+    },
+    {
+      "name": "MID AMERICA APARTMENT COMMUNITIES INC",
+      "ticker": "MAA-PI",
+      "cik": "912595"
+    },
+    {
+      "name": "ROIVANT SCIENCES LTD",
+      "ticker": "MAACU",
+      "cik": "1635088"
+    },
+    {
+      "name": "CARDIO DIAGNOSTICS HOLDINGS INC",
+      "ticker": "MAAQR",
+      "cik": "1870144"
+    },
+    {
+      "name": "CARDIO DIAGNOSTICS HOLDINGS INC",
+      "ticker": "MAAQU",
+      "cik": "1870144"
+    },
+    {
+      "name": "MOUNTAIN & CO I ACQUISITION CORP",
+      "ticker": "MCAAU",
+      "cik": "1856995"
+    },
+    {
+      "name": "MOUNTAIN & CO I ACQUISITION CORP",
+      "ticker": "MCAAW",
+      "cik": "1856995"
+    },
+    {
+      "name": "NORTH ATLANTIC ACQUISITION CORP",
+      "ticker": "NAACU",
+      "cik": "1830063"
+    },
+    {
+      "name": "NORTH ATLANTIC ACQUISITION CORP",
+      "ticker": "NAACW",
+      "cik": "1830063"
+    },
+    {
+      "name": "NAAS TECHNOLOGY INC",
+      "ticker": "NAAS",
+      "cik": "1712178"
+    },
+    {
+      "name": "OPY ACQUISITION CORP I",
+      "ticker": "OHAAU",
+      "cik": "1870778"
+    },
+    {
+      "name": "OPY ACQUISITION CORP I",
+      "ticker": "OHAAW",
+      "cik": "1870778"
+    },
+    {
+      "name": "PROSOMNUS INC",
+      "ticker": "OSAAW",
+      "cik": "1934064"
+    },
+    {
+      "name": "PIMCO ADVISORS HOLDINGS LP",
+      "ticker": "PA.A",
+      "cik": "814562"
+    },
+    {
+      "name": "LION GROUP HOLDING LTD",
+      "ticker": "PAACR",
+      "cik": "1806524"
+    },
+    {
+      "name": "PARAMOUNT GLOBAL",
+      "ticker": "PARAA",
+      "cik": "813828"
+    },
+    {
+      "name": "PLAYBOY ENTERPRISES INC",
+      "ticker": "PLA.A",
+      "cik": "1072341"
+    },
+    {
+      "name": "BERKSHIRE GREY INC",
+      "ticker": "RAACU",
+      "cik": "1824734"
+    },
+    {
+      "name": "CLOOPEN GROUP HOLDING LTD",
+      "ticker": "RAASY",
+      "cik": "1804583"
+    },
+    {
+      "name": "RYANAIR HOLDINGS PLC",
+      "ticker": "RYAAY",
+      "cik": "1038683"
+    },
+    {
+      "name": "SCIENCE STRATEGIC ACQUISITION CORP ALPHA",
+      "ticker": "SSAAU",
+      "cik": "1830547"
+    },
+    {
+      "name": "SCIENCE STRATEGIC ACQUISITION CORP ALPHA",
+      "ticker": "SSAAW",
+      "cik": "1830547"
+    },
+    {
+      "name": "TARGET GLOBAL ACQUISITION I CORP",
+      "ticker": "TGAAU",
+      "cik": "1847355"
+    },
+    {
+      "name": "TARGET GLOBAL ACQUISITION I CORP",
+      "ticker": "TGAAW",
+      "cik": "1847355"
+    },
+    {
+      "name": "UTA ACQUISITION CORP",
+      "ticker": "UTAAU",
+      "cik": "1879221"
+    },
+    {
+      "name": "UTA ACQUISITION CORP",
+      "ticker": "UTAAWF",
+      "cik": "1879221"
+    },
+    {
+      "name": "KURV YIELD PREMIUM APPLE (AAPL) ETF",
+      "ticker": "AAPY",
+      "cik": "1848758"
+    },
+    {
+      "name": "ALL AMERICAN TERM TRUST INC",
+      "ticker": "AAT1",
+      "cik": "894233"
+    },
+    {
+      "name": "ETRACS DAILY SHORT 1-MONTH S&P 500 VIX",
+      "ticker": "AAVX",
+      "cik": ""
+    },
+    {
+      "name": "ISHARES MSCI ALL COUNTRY ASIA EX JAPAN ETF",
+      "ticker": "AAXJ",
+      "cik": "1100663"
+    },
+    {
+      "name": "AXS FIRST PRIORITY CLO BOND ETF",
+      "ticker": "AAA",
+      "cik": "1587982"
+    },
+    {
+      "name": "GOLDMAN SACHS PHYSICAL GOLD ETF",
+      "ticker": "AAAU",
+      "cik": "1708646"
+    },
+    {
+      "name": "ALTABA INC",
+      "ticker": "AABA",
+      "cik": "1011006"
+    },
+    {
+      "name": "ADVISORSHARES DORSEY WRIGHT ADR ETF",
+      "ticker": "AADR",
+      "cik": "1408970"
+    },
+    {
+      "name": "AMERICAN GOVERNMENT INCOME PORTFOLIO INC",
+      "ticker": "AAF",
+      "cik": "836425"
+    },
+    {
+      "name": "ARLINGTON ASSET INVESTMENT CORP",
+      "ticker": "AAIN",
+      "cik": "1209028"
+    },
+    {
+      "name": "ISHARES MSCI ALL COUNTRY ASIA INFORMATION TECHNOLOGY ETF",
+      "ticker": "AAIT",
+      "cik": "1100663"
+    },
+    {
+      "name": "GRANITESHARES 2X LONG AAPL DAILY ETF",
+      "ticker": "AAPB",
+      "cik": "1689873"
+    },
+    {
+      "name": "DIREXION DAILY AAPL BEAR 1X SHARES",
+      "ticker": "AAPD",
+      "cik": "1424958"
+    },
+    {
+      "name": "DIREXION DAILY AAPL BULL 15X SHARES",
+      "ticker": "AAPU",
+      "cik": "1424958"
+    },
+    {
+      "name": "T-REX 2X LONG APPLE DAILY TARGET ETF",
+      "ticker": "AAPX",
+      "cik": "1771146"
+    },
+    {
+      "name": "QWEST CORP",
+      "ticker": "CTAA",
+      "cik": "68622"
+    },
+    {
+      "name": "ENTERGY ARKANSAS LLC",
+      "ticker": "EAA",
+      "cik": "7323"
+    },
+    {
+      "name": "GUGGENHEIM AIRLINE ETF",
+      "ticker": "FAA",
+      "cik": "1365662"
+    },
+    {
+      "name": "FIRST TRUST ALTERNATIVE ABSOLUTE RETURN STRATEGY ETF",
+      "ticker": "FAAR",
+      "cik": "1561785"
+    },
+    {
+      "name": "CAMBRIA GLOBAL ASSET ALLOCATION ETF",
+      "ticker": "GAA",
+      "cik": "1529390"
+    },
+    {
+      "name": "ADVISORSHARES MORGAN CREEK GLOBAL TACTICAL ETF",
+      "ticker": "GTAA",
+      "cik": "1408970"
+    },
+    {
+      "name": "NUVEEN CORPORATE INCOME 2023 TARGET TERM FUND",
+      "ticker": "JHAA",
+      "cik": "1753217"
+    },
+    {
+      "name": "VANECK MUNI ALLOCATION ETF",
+      "ticker": "MAAX",
+      "cik": "1137360"
+    },
+    {
+      "name": "ISHARES 2012 S&P AMT-FREE MUNICIPAL SERIES",
+      "ticker": "MUAA",
+      "cik": "1100663"
+    },
+    {
+      "name": "BRIGHTSPHERE INVESTMENT GROUP INC",
+      "ticker": "OMAA",
+      "cik": "1748824"
+    },
+    {
+      "name": "PGIM AAA CLO ETF",
+      "ticker": "PAAA",
+      "cik": "1727074"
+    },
+    {
+      "name": "BLACKROCK CALIFORNIA INVESTMENT QUALITY MUNICIPAL TRUST INC",
+      "ticker": "RAA",
+      "cik": "902722"
+    },
+    {
+      "name": "VANECK INFLATION ALLOCATION ETF",
+      "ticker": "RAAX",
+      "cik": "1137360"
+    },
+    {
+      "name": "PROSHARES ULTRA SMALLCAP600",
+      "ticker": "SAA",
+      "cik": "1174610"
+    },
+    {
+      "name": "TREND AGGREGATION GROWTH ETF",
+      "ticker": "TAAG",
+      "cik": "1719812"
+    },
+    {
+      "name": "ETRACS 1-MONTH S&P 500 VIX FUTURES",
+      "ticker": "VXAA",
+      "cik": ""
+    },
+    {
+      "name": "AMERICAN MUNICIPAL INCOME PORTFOLIO INC",
+      "ticker": "XAA",
+      "cik": "902750"
+    }
+  ]
+}

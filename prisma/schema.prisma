@@ -1,0 +1,440 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("POSTGRES_URL")
+}
+
+model User {
+  id                Int       @id @default(autoincrement()) @map("user_id")
+  name              String?   @map("name")
+  email             String    @unique @map("email")
+  passwordHash      String?   @map("password_hash")
+  requirePassword   Boolean   @default(true)
+  isActive          Boolean   @default(true) @map("is_active")
+  lastLoginDate     DateTime? @map("last_login_date")
+  isEmailVerified   Boolean   @default(false) @map("is_email_verified")
+  isMobileVerified  Boolean   @default(false) @map("is_mobile_verified")
+  createdAt         DateTime  @default(now()) @map("created_at")
+  updatedAt         DateTime  @default(now()) @updatedAt @map("updated_at")
+  googleOauthId     String?   @unique @map("google_oauth_id")
+  otps              OTP[]     @relation("UserToOTP")
+  watchlists        Watchlist[]       @relation("UserToWatchlist")
+
+  @@map("users")
+}
+
+model OTP {
+  otpId        Int       @id @default(autoincrement()) @map("otp_id")
+  userId       Int       @map("user_id")
+  email        String?   @map("email") @unique
+  phoneNumber  String?   @map("phone_number")
+  otpCode      String    @map("otp_code")
+  createdAt    DateTime  @default(now()) @map("created_at")
+  expiresAt    DateTime  @map("expires_at")
+  user         User      @relation("UserToOTP", fields: [userId], references: [id])
+
+  @@map("otps")
+}
+
+model IncomeStatementAnnual {
+  id                        Int       @id @default(autoincrement())
+  symbol                    String
+  fiscalDateEnding          DateTime  @map("fiscal_date_ending")
+  reportedCurrency          String?   @map("reported_currency")
+  grossProfit               Float?    @map("gross_profit")
+  totalRevenue              Float?    @map("total_revenue")
+  costOfRevenue             Float?    @map("cost_of_revenue")
+  costOfGoodsAndServicesSold Float?   @map("cost_of_goods_and_services_sold")
+  operatingIncome           Float?    @map("operating_income")
+  sellingGeneralAndAdministrative Float? @map("selling_general_and_administrative")
+  researchAndDevelopment    Float?    @map("research_and_development")
+  operatingExpenses         Float?    @map("operating_expenses")
+  investmentIncomeNet       Float?    @map("investment_income_net")
+  netInterestIncome         Float?    @map("net_interest_income")
+  interestIncome            Float?    @map("interest_income")
+  interestExpense           Float?    @map("interest_expense")
+  nonInterestIncome         Float?    @map("non_interest_income")
+  otherNonOperatingIncome   Float?    @map("other_non_operating_income")
+  depreciation              Float?    @map("depreciation")
+  depreciationAndAmortization Float?  @map("depreciation_and_amortization")
+  incomeBeforeTax           Float?    @map("income_before_tax")
+  incomeTaxExpense          Float?    @map("income_tax_expense")
+  interestAndDebtExpense    Float?    @map("interest_and_debt_expense")
+  netIncomeFromContinuingOperations Float? @map("net_income_from_continuing_operations")
+  comprehensiveIncomeNetOfTax Float?  @map("comprehensive_income_net_of_tax")
+  ebit                      Float?    @map("ebit")
+  ebitda                    Float?    @map("ebitda")
+  netIncome                 Float?    @map("net_income")
+  createdAt                 DateTime  @default(now()) @map("created_at")
+
+  @@map("income_statement_annual")
+}
+
+model IncomeStatementQuarterly {
+  id                        Int       @id @default(autoincrement())
+  symbol                    String
+  fiscalDateEnding          DateTime  @map("fiscal_date_ending")
+  reportedCurrency          String?   @map("reported_currency")
+  grossProfit               Float?    @map("gross_profit")
+  totalRevenue              Float?    @map("total_revenue")
+  costOfRevenue             Float?    @map("cost_of_revenue")
+  costOfGoodsAndServicesSold Float?   @map("cost_of_goods_and_services_sold")
+  operatingIncome           Float?    @map("operating_income")
+  sellingGeneralAndAdministrative Float? @map("selling_general_and_administrative")
+  researchAndDevelopment    Float?    @map("research_and_development")
+  operatingExpenses         Float?    @map("operating_expenses")
+  investmentIncomeNet       Float?    @map("investment_income_net")
+  netInterestIncome         Float?    @map("net_interest_income")
+  interestIncome            Float?    @map("interest_income")
+  interestExpense           Float?    @map("interest_expense")
+  nonInterestIncome         Float?    @map("non_interest_income")
+  otherNonOperatingIncome   Float?    @map("other_non_operating_income")
+  depreciation              Float?    @map("depreciation")
+  depreciationAndAmortization Float?  @map("depreciation_and_amortization")
+  incomeBeforeTax           Float?    @map("income_before_tax")
+  incomeTaxExpense          Float?    @map("income_tax_expense")
+  interestAndDebtExpense    Float?    @map("interest_and_debt_expense")
+  netIncomeFromContinuingOperations Float? @map("net_income_from_continuing_operations")
+  comprehensiveIncomeNetOfTax Float?  @map("comprehensive_income_net_of_tax")
+  ebit                      Float?    @map("ebit")
+  ebitda                    Float?    @map("ebitda")
+  netIncome                 Float?    @map("net_income")
+  createdAt                 DateTime  @default(now()) @map("created_at")
+
+  @@map("income_statement_quarterly")
+}
+
+model BalanceSheetAnnual {
+  id                            Int      @id @default(autoincrement())
+  symbol                        String
+  fiscalDateEnding              DateTime @map("fiscal_date_ending")
+  reportedCurrency              String?  @map("reported_currency")
+  totalAssets                   Float?   @map("total_assets")
+  totalCurrentAssets            Float?   @map("total_current_assets")
+  cashAndCashEquivalentsAtCarryingValue Float? @map("cash_and_cash_equivalents_at_carrying_value")
+  cashAndShortTermInvestments   Float?   @map("cash_and_short_term_investments")
+  inventory                     Float?   @map("inventory")
+  currentNetReceivables         Float?   @map("current_net_receivables")
+  totalNonCurrentAssets         Float?   @map("total_non_current_assets")
+  propertyPlantEquipment        Float?   @map("property_plant_equipment")
+  accumulatedDepreciationAmortizationPPE Float? @map("accumulated_depreciation_amortization_ppe")
+  intangibleAssets              Float?   @map("intangible_assets")
+  intangibleAssetsExcludingGoodwill Float? @map("intangible_assets_excluding_goodwill")
+  goodwill                      Float?   @map("goodwill")
+  investments                   Float?   @map("investments")
+  longTermInvestments           Float?   @map("long_term_investments")
+  shortTermInvestments          Float?   @map("short_term_investments")
+  otherCurrentAssets            Float?   @map("other_current_assets")
+  otherNonCurrentAssets         Float?   @map("other_non_current_assets")
+  totalLiabilities              Float?   @map("total_liabilities")
+  totalCurrentLiabilities       Float?   @map("total_current_liabilities")
+  currentAccountsPayable        Float?   @map("current_accounts_payable")
+  deferredRevenue               Float?   @map("deferred_revenue")
+  currentDebt                   Float?   @map("current_debt")
+  shortTermDebt                 Float?   @map("short_term_debt")
+  totalNonCurrentLiabilities    Float?   @map("total_non_current_liabilities")
+  capitalLeaseObligations       Float?   @map("capital_lease_obligations")
+  longTermDebt                  Float?   @map("long_term_debt")
+  currentLongTermDebt           Float?   @map("current_long_term_debt")
+  longTermDebtNoncurrent        Float?   @map("long_term_debt_noncurrent")
+  shortLongTermDebtTotal        Float?   @map("short_long_term_debt_total")
+  otherCurrentLiabilities       Float?   @map("other_current_liabilities")
+  otherNonCurrentLiabilities    Float?   @map("other_non_current_liabilities")
+  totalShareholderEquity        Float?   @map("total_shareholder_equity")
+  treasuryStock                 Float?   @map("treasury_stock")
+  retainedEarnings              Float?   @map("retained_earnings")
+  commonStock                   Float?   @map("common_stock")
+  commonStockSharesOutstanding  Float?   @map("common_stock_shares_outstanding")
+  createdAt                     DateTime @default(now()) @map("created_at")
+
+  @@map("balance_sheet_annual")
+}
+
+model BalanceSheetQuarterly {
+  id                            Int      @id @default(autoincrement())
+  symbol                        String
+  fiscalDateEnding              DateTime @map("fiscal_date_ending")
+  reportedCurrency              String?  @map("reported_currency")
+  totalAssets                   Float?   @map("total_assets")
+  totalCurrentAssets            Float?   @map("total_current_assets")
+  cashAndCashEquivalentsAtCarryingValue Float? @map("cash_and_cash_equivalents_at_carrying_value")
+  cashAndShortTermInvestments   Float?   @map("cash_and_short_term_investments")
+  inventory                     Float?   @map("inventory")
+  currentNetReceivables         Float?   @map("current_net_receivables")
+  totalNonCurrentAssets         Float?   @map("total_non_current_assets")
+  propertyPlantEquipment        Float?   @map("property_plant_equipment")
+  accumulatedDepreciationAmortizationPPE Float? @map("accumulated_depreciation_amortization_ppe")
+  intangibleAssets              Float?   @map("intangible_assets")
+  intangibleAssetsExcludingGoodwill Float? @map("intangible_assets_excluding_goodwill")
+  goodwill                      Float?   @map("goodwill")
+  investments                   Float?   @map("investments")
+  longTermInvestments           Float?   @map("long_term_investments")
+  shortTermInvestments          Float?   @map("short_term_investments")
+  otherCurrentAssets            Float?   @map("other_current_assets")
+  otherNonCurrentAssets         Float?   @map("other_non_current_assets")
+  totalLiabilities              Float?   @map("total_liabilities")
+  totalCurrentLiabilities       Float?   @map("total_current_liabilities")
+  currentAccountsPayable        Float?   @map("current_accounts_payable")
+  deferredRevenue               Float?   @map("deferred_revenue")
+  currentDebt                   Float?   @map("current_debt")
+  shortTermDebt                 Float?   @map("short_term_debt")
+  totalNonCurrentLiabilities    Float?   @map("total_non_current_liabilities")
+  capitalLeaseObligations       Float?   @map("capital_lease_obligations")
+  longTermDebt                  Float?   @map("long_term_debt")
+  currentLongTermDebt           Float?   @map("current_long_term_debt")
+  longTermDebtNoncurrent        Float?   @map("long_term_debt_noncurrent")
+  shortLongTermDebtTotal        Float?   @map("short_long_term_debt_total")
+  otherCurrentLiabilities       Float?   @map("other_current_liabilities")
+  otherNonCurrentLiabilities    Float?   @map("other_non_current_liabilities")
+  totalShareholderEquity        Float?   @map("total_shareholder_equity")
+  treasuryStock                 Float?   @map("treasury_stock")
+  retainedEarnings              Float?   @map("retained_earnings")
+  commonStock                   Float?   @map("common_stock")
+  commonStockSharesOutstanding  Float?   @map("common_stock_shares_outstanding")
+  createdAt                     DateTime @default(now()) @map("created_at")
+
+  @@map("balance_sheet_quarterly")
+}
+
+model CashFlowAnnual {
+  id                                    Int       @id @default(autoincrement())
+  symbol                                String
+  fiscalDateEnding                      DateTime  @map("fiscal_date_ending")
+  reportedCurrency                      String?   @map("reported_currency")
+  operatingCashflow                     Float?    @map("operating_cashflow")
+  paymentsForOperatingActivities        Float?    @map("payments_for_operating_activities")
+  proceedsFromOperatingActivities       Float?    @map("proceeds_from_operating_activities")
+  changeInOperatingLiabilities          Float?    @map("change_in_operating_liabilities")
+  changeInOperatingAssets               Float?    @map("change_in_operating_assets")
+  depreciationDepletionAndAmortization  Float?    @map("depreciation_depletion_and_amortization")
+  capitalExpenditures                   Float?    @map("capital_expenditures")
+  changeInReceivables                   Float?    @map("change_in_receivables")
+  changeInInventory                     Float?    @map("change_in_inventory")
+  profitLoss                            Float?    @map("profit_loss")
+  cashflowFromInvestment                Float?    @map("cashflow_from_investment")
+  cashflowFromFinancing                 Float?    @map("cashflow_from_financing")
+  proceedsFromRepaymentsOfShortTermDebt Float?    @map("proceeds_from_repayments_of_short_term_debt")
+  paymentsForRepurchaseOfCommonStock    Float?    @map("payments_for_repurchase_of_common_stock")
+  paymentsForRepurchaseOfEquity         Float?    @map("payments_for_repurchase_of_equity")
+  paymentsForRepurchaseOfPreferredStock Float?    @map("payments_for_repurchase_of_preferred_stock")
+  dividendPayout                        Float?    @map("dividend_payout")
+  dividendPayoutCommonStock             Float?    @map("dividend_payout_common_stock")
+  dividendPayoutPreferredStock          Float?    @map("dividend_payout_preferred_stock")
+  proceedsFromIssuanceOfCommonStock     Float?    @map("proceeds_from_issuance_of_common_stock")
+  proceedsFromIssuanceOfLongTermDebtAndCapitalSecurities Float? @map("proceeds_from_issuance_of_long_term_debt_and_capital_securities")
+  proceedsFromIssuanceOfPreferredStock  Float?    @map("proceeds_from_issuance_of_preferred_stock")
+  proceedsFromRepurchaseOfEquity        Float?    @map("proceeds_from_repurchase_of_equity")
+  proceedsFromSaleOfTreasuryStock       Float?    @map("proceeds_from_sale_of_treasury_stock")
+  changeInCashAndCashEquivalents        Float?    @map("change_in_cash_and_cash_equivalents")
+  changeInExchangeRate                  Float?    @map("change_in_exchange_rate")
+  netIncome                             Float?    @map("net_income")
+  createdAt                             DateTime  @default(now()) @map("created_at")
+
+  @@map("cash_flow_annual")
+}
+
+model CashFlowQuarterly {
+  id                                    Int       @id @default(autoincrement())
+  symbol                                String
+  fiscalDateEnding                      DateTime  @map("fiscal_date_ending")
+  reportedCurrency                      String?   @map("reported_currency")
+  operatingCashflow                     Float?    @map("operating_cashflow")
+  paymentsForOperatingActivities        Float?    @map("payments_for_operating_activities")
+  proceedsFromOperatingActivities       Float?    @map("proceeds_from_operating_activities")
+  changeInOperatingLiabilities          Float?    @map("change_in_operating_liabilities")
+  changeInOperatingAssets               Float?    @map("change_in_operating_assets")
+  depreciationDepletionAndAmortization  Float?    @map("depreciation_depletion_and_amortization")
+  capitalExpenditures                   Float?    @map("capital_expenditures")
+  changeInReceivables                   Float?    @map("change_in_receivables")
+  changeInInventory                     Float?    @map("change_in_inventory")
+  profitLoss                            Float?    @map("profit_loss")
+  cashflowFromInvestment                Float?    @map("cashflow_from_investment")
+  cashflowFromFinancing                 Float?    @map("cashflow_from_financing")
+  proceedsFromRepaymentsOfShortTermDebt Float?    @map("proceeds_from_repayments_of_short_term_debt")
+  paymentsForRepurchaseOfCommonStock    Float?    @map("payments_for_repurchase_of_common_stock")
+  paymentsForRepurchaseOfEquity         Float?    @map("payments_for_repurchase_of_equity")
+  paymentsForRepurchaseOfPreferredStock Float?    @map("payments_for_repurchase_of_preferred_stock")
+  dividendPayout                        Float?    @map("dividend_payout")
+  dividendPayoutCommonStock             Float?    @map("dividend_payout_common_stock")
+  dividendPayoutPreferredStock          Float?    @map("dividend_payout_preferred_stock")
+  proceedsFromIssuanceOfCommonStock     Float?    @map("proceeds_from_issuance_of_common_stock")
+  proceedsFromIssuanceOfLongTermDebtAndCapitalSecurities Float? @map("proceeds_from_issuance_of_long_term_debt_and_capital_securities")
+  proceedsFromIssuanceOfPreferredStock  Float?    @map("proceeds_from_issuance_of_preferred_stock")
+  proceedsFromRepurchaseOfEquity        Float?    @map("proceeds_from_repurchase_of_equity")
+  proceedsFromSaleOfTreasuryStock       Float?    @map("proceeds_from_sale_of_treasury_stock")
+  changeInCashAndCashEquivalents        Float?    @map("change_in_cash_and_cash_equivalents")
+  changeInExchangeRate                  Float?    @map("change_in_exchange_rate")
+  netIncome                             Float?    @map("net_income")
+  createdAt                             DateTime  @default(now()) @map("created_at")
+
+  @@map("cash_flow_quarterly")
+}
+
+
+
+// Company model
+model Company {
+  symbol         String   @id @map("symbol")
+  name           String?  @map("name")
+  sector         String?  @map("sector")
+  industry       String?  @map("industry")
+  description    String?  @map("description")
+  country        String?  @map("country")
+  website        String?  @map("website")
+  exchange       String?  @map("exchange")
+  marketCap      Float?   @map("market_cap")
+  dividendYield  Float?   @map("dividend_yield")
+  currentPeRatio Float?   @map("current_pe_ratio")
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  watchlistCompanies WatchlistCompany[] @relation("CompanyToWatchlist")
+  companyOverview    CompanyOverview[]  @relation("CompanyToCompanyOverview")
+  stockData          StockData[]        @relation("CompanyToStockData")
+
+  @@map("companies")
+}
+
+model StockData {
+  id          Int      @id @default(autoincrement())
+  symbol      String   @map("symbol")
+  date        DateTime @map("date")
+  intervalType String  @map("interval_type")
+  open        Float    @map("open")
+  high        Float    @map("high")
+  low         Float    @map("low")
+  close       Float    @map("close")
+  volume      Float    @map("volume")
+  company     Company  @relation("CompanyToStockData", fields: [symbol], references: [symbol])
+
+  @@map("stock_data")
+}
+
+
+model Watchlist {
+  id        Int                @id @default(autoincrement())
+  name      String             @unique @map("name")
+  userId    Int                @map("user_id")
+  user      User               @relation("UserToWatchlist", fields: [userId], references: [id])
+  companies WatchlistCompany[] @relation("WatchlistToWatchlistCompany")
+
+  @@map("watchlists")
+}
+
+model WatchlistCompany {
+  id          Int       @id @default(autoincrement())
+  watchlistId Int       @map("watchlist_id")
+  symbol      String    @map("symbol")
+  watchlist   Watchlist @relation("WatchlistToWatchlistCompany", fields: [watchlistId], references: [id])
+  company     Company   @relation("CompanyToWatchlist", fields: [symbol], references: [symbol])
+
+  @@unique([watchlistId, symbol])
+  @@map("watchlist_companies")
+}
+
+model Ratio {
+  ratioId    Int      @id @default(autoincrement()) @map("ratio_id")
+  name        String  @unique @map("name")
+  description String @map("description")
+  formula     String  @map("formula")
+  parameters  String[] @map("parameters")
+  type        String  @map("type")
+  value       RatioValue[]  @relation("RatioToValue")
+
+  @@map("ratios")
+}
+
+model RatioValue {
+  id          Int       @id @default(autoincrement())
+  symbol      String    @map("symbol")
+  ratioId    Int        @map("ratio_id")
+  value       Float     @map("value")
+  period      DateTime  @map("period")
+  time_series String    @map("time_series")
+  ratio        Ratio     @relation("RatioToValue", fields: [ratioId], references: [ratioId])
+
+  @@map("ratio_values")
+}
+
+model CompanyOverview {
+  id                         Int      @id @default(autoincrement()) @map("id")
+  symbol                     String   @map("symbol")
+  assetType                  String?  @map("asset_type")
+  name                       String?  @map("name")
+  description                String?  @map("description")
+  cik                        String?  @map("cik")
+  exchange                   String?  @map("exchange")
+  currency                   String?  @map("currency")
+  country                    String?  @map("country")
+  sector                     String?  @map("sector")
+  industry                   String?  @map("industry")
+  address                    String?  @map("address")
+  fiscalYearEnd              String?  @map("fiscal_year_end")
+  latestQuarter              DateTime?@map("latest_quarter")
+  marketCapitalization       Float?   @map("market_capitalization")
+  ebitda                     Float?   @map("ebitda")
+  peRatio                    Float?   @map("pe_ratio")
+  pegRatio                   Float?   @map("peg_ratio")
+  bookValue                  Float?   @map("book_value")
+  dividendPerShare           Float?   @map("dividend_per_share")
+  dividendYield              Float?   @map("dividend_yield")
+  eps                        Float?   @map("eps")
+  revenuePerShareTtm         Float?   @map("revenue_per_share_ttm")
+  profitMargin               Float?   @map("profit_margin")
+  operatingMarginTtm         Float?   @map("operating_margin_ttm")
+  returnOnAssetsTtm          Float?   @map("return_on_assets_ttm")
+  returnOnEquityTtm          Float?   @map("return_on_equity_ttm")
+  revenueTtm                 Float?   @map("revenue_ttm")
+  grossProfitTtm             Float?   @map("gross_profit_ttm")
+  dilutedEpsTtm              Float?   @map("diluted_eps_ttm")
+  quarterlyEarningsGrowthYoy Float?   @map("quarterly_earnings_growth_yoy")
+  quarterlyRevenueGrowthYoy  Float?   @map("quarterly_revenue_growth_yoy")
+  analystTargetPrice         Float?   @map("analyst_target_price")
+  analystRatingStrongBuy     Float?   @map("analyst_rating_strong_buy")
+  analystRatingBuy           Float?   @map("analyst_rating_buy")
+  analystRatingHold          Float?   @map("analyst_rating_hold")
+  analystRatingSell          Float?   @map("analyst_rating_sell")
+  analystRatingStrongSell    Float?   @map("analyst_rating_strong_sell")
+  trailingPe                 Float?   @map("trailing_pe")
+  forwardPe                  Float?   @map("forward_pe")
+  priceToSalesRatioTtm       Float?   @map("price_to_sales_ratio_ttm")
+  priceToBookRatio           Float?   @map("price_to_book_ratio")
+  evToRevenue                Float?   @map("ev_to_revenue")
+  evToEbitda                 Float?   @map("ev_to_ebitda")
+  beta                       Float?   @map("beta")
+  week52High                 Float?   @map("week_52_high")
+  week52Low                  Float?   @map("week_52_low")
+  movingAverage50Day         Float?   @map("moving_average_50_day")
+  movingAverage200Day        Float?   @map("moving_average_200_day")
+  sharesOutstanding          Float?   @map("shares_outstanding")
+  dividendDate               DateTime?@map("dividend_date")
+  exDividendDate             DateTime?@map("ex_dividend_date")
+  fiscalDateEnding           DateTime?@map("fiscal_date_ending")
+  createdAt                  DateTime @default(now()) @map("created_at")
+
+ company     Company   @relation("CompanyToCompanyOverview", fields: [symbol], references: [symbol])
+
+  @@map("company_overview")
+}
+
+
+
+model AdminUser {
+  adminId   Int      @id @default(autoincrement()) @map("admin_id")
+  email     String   @unique @map("email")
+  password  String   @map("password")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("admin_users")
+}
+

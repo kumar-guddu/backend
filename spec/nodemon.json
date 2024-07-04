@@ -1,0 +1,6 @@
+{
+  "watch": ["spec", "prisma/schema.prisma"],
+  "ext": "spec.ts, prisma",
+  "ignore": ["spec/support"],
+  "exec": "npm run regenerate-prisma && ./node_modules/.bin/ts-node --files -r tsconfig-paths/register ./spec"
+}
