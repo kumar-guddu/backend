@@ -59,5 +59,10 @@ app.use(errorHandlerCustom);
 connectToDatabase();
 // Add APIs, must be after middleware
 // ** Export default ** //
+// Start the server and listen on the specified port
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
 
 export default app;
